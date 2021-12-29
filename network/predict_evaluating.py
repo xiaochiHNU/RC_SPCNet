@@ -60,7 +60,7 @@ if __name__ == '__main__':
 
     model.compile(optimizer="Adam",
                   loss='mse', metrics=['accuracy'])
-    model.load_weights('RC_SPCNet.11-0.05077.hdf5')
+    model.load_weights('RC_SPCNet.hdf5')
 
     print('-' * 30)
     print('evaluating the test...')
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     print('-' * 30)
     print('Saving predicted masks to files...')
     print('-' * 30)
-    pred_dir = 'preds_focalloss'
+    pred_dir = 'preds'
     if not os.path.exists(pred_dir):
         os.mkdir(pred_dir)
     for image, image_id in zip(imgs_mask_predict, imgs_id_test):

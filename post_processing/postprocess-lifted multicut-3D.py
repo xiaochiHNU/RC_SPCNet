@@ -208,9 +208,9 @@ def test_3D():
     print('end!')
 
 ### load train data
-path = r'/home/hongb/bigstore/tohongbei/cmpb-revise/isbi2012/raw_train.tif'
-path_pre = r'/home/hongb/bigstore/tohongbei/cmpb-revise/isbi2012/probabilities_train.tif'
-path_gt = r'/home/hongb/bigstore/tohongbei/cmpb-revise/isbi2012/groundtruth.tif'
+path = r'/raw_train.tif'
+path_pre = r'/probabilities_train.tif'
+path_gt = r'/groundtruth.tif'
 raw_train = imageio.volread(path)
 boundaries_train = (imageio.volread(path_pre)/255).astype('float32')
 gt_train = labels_to_dense_gt( path_gt, boundaries_train)
@@ -218,8 +218,8 @@ gt_train = np.transpose(gt_train, (2, 0, 1))
 watershed_train = ws.stacked_watershed(boundaries_train, threshold=.3, sigma_seeds=2., alpha=.9, min_size=20)[0]
 
 ## test data
-data_path = r'/home/hongb/bigstore/tohongbei/cmpb-revise/isbi2012/raw_test.tif'
-label_path = r'/home/hongb/bigstore/tohongbei/cmpb-revise/isbi2012/probabilities_test.tif'
+data_path = r'/raw_test.tif'
+label_path = r'/probabilities_test.tif'
 raw_test = imageio.volread(data_path)
 boundaries_test = (imageio.volread(label_path)/255).astype('float32')
 

@@ -23,7 +23,6 @@ from keras.layers import Conv2D
 	python keras_subpixel.py	
 """
 
-
 class Subpixel(Conv2D):
     def __init__(self,
                  filters,
