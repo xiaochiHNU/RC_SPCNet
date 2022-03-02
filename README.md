@@ -47,7 +47,7 @@ code：ydlo
 
 **How to use (lifted multicut)**
 
-Adjust the data path and run the code “postprocess-lifted multicut.py”, the result will be saved in the specified path. 
+Adjust the data path and run the code “postprocess_lifted_multicut.py”, the result will be saved in the specified path. 
 
 **Acknowledgement**
 
