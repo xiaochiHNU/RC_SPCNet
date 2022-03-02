@@ -1,5 +1,3 @@
-**README**
-
 This repository contains two module including residual contextual and subpixel convolution network (RC-SPCNet) and post-processing (lifted multicut), developed by Hainan university and Institute of Automation, Chinese Academy of Sciences.
 
 **Environment**
