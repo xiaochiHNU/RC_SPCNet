@@ -42,7 +42,7 @@ python -m pip install "napari[all]"
 **Test Data**
 
 The dataset of lifted multicut can be download in：
-https://pan.baidu.com/s/1_fX2FNKDXMMSWe8pQOnh4g
+https://pan.baidu.com/s/1_fX2FNKDXMMSWe8pQOnh4g, 
 code：ydlo
 
 **How to use (lifted multicut)**
