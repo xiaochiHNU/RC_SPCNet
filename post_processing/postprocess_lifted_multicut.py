@@ -325,7 +325,6 @@ gt_train = vigra.analysis.labelVolumeWithBackground(gt_train)
 watershed_train = ws.stacked_watershed(boundaries_train, threshold=.3, sigma_seeds=2., alpha=.9, min_size=20)[0]
 relabel_consecutive(watershed_train, block_shape=[5, 2048, 2048])
 
-
 ## test data
 data_path = r'path-to-raw_test.tif'
 boundaries_path = r'path-to-probabilities_test.tif'
